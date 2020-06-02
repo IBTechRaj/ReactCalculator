@@ -6,7 +6,6 @@ function ButtonPanel(){
           
           <div className="keyPanel">
           <div className="row">
-          <Button name="(" onClick={e => this.props.onClick(e.target.name)}>(</Button>
             <Button >AC</Button>
             <Button >+/-</Button>
             <Button >%</Button>
