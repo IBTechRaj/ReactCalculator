@@ -1,25 +1,30 @@
-import React, { Component } from "react"
-import Display from './Display'
-import ButtonPanel from './ButtonPanel'
-
+import React, { Component } from "react";
+import Display from "./Display";
+import ButtonPanel from "./ButtonPanel";
+import "./App.css";
 
 class App extends Component {
-constructor(){
-        super();
+  constructor() {
+    super();
 
-        this.state = {
-            result: ""
-        }
-    }
+    this.state = {
+      result: ""
+    };
+  }
+  handleClick = buttonName => {};
 
-render() {
-  return (
-    <div>
-      <Display />
-      <ButtonPanel />
-    </div>
-  );
+  render() {
+    return (
+      <div className="container">
+        <div className="display">
+          <Display />
+        </div>
+        <div className="button-panel">
+          <ButtonPanel handleClick={this.handleClick} />
+        </div>
+      </div>
+    );
   }
 }
 
-export default App
+export default App;

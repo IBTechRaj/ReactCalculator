@@ -1,0 +1,40 @@
+.key-panel {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+.row {
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+.fifty-percent {
+  width: 50%;
+}
+.twenty-five-percent {
+  width: 25%;
+}
+.orange {
+  background-color: orange;
+}
+
+.light-gray {
+  background-color: #e4e4e4;
+}
+.light-gray:hover {
+  background-color: lightgray;
+}
+.button-panel .light-gray:active {
+  background-color: #e4e4e4;
+}
+.button-panel .orange {
+  background-color: #f5913e;
+}
+.button-panel .orange:hover {
+  background-color: #e7893c;
+}
+.button-panel .orange:active {
+  background-color: #f5913e;
+}

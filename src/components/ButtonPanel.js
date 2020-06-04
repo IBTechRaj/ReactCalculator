@@ -1,42 +1,51 @@
-import React from "react"
-import Button from './Button'
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "./Button";
+import "./ButtonPanel.css";
 
-function ButtonPanel(){
+const ButtonPanel = ({ handleClick }) => {
   return (
-          
-          <div className="keyPanel">
-          <div className="row">
-            <Button >AC</Button>
-            <Button >+/-</Button>
-            <Button >%</Button>
-            <Button >/</Button>
-          </div>
-          <div className="row">
-            <Button >7</Button>
-            <Button >8</Button>
-            <Button >9</Button>
-            <Button >X</Button>
-          </div>
-          <div className="row">
-            <Button >4</Button>
-            <Button >5</Button>
-            <Button >6</Button>
-            <Button >-</Button>
-          </div>
-          <div className="row">
-            <Button >1</Button>
-            <Button >2</Button>
-            <Button >3</Button>
-            <Button >+</Button>
-          </div>
-          <div className="row">
-            <Button >0</Button>
-            <Button >.</Button>
-            <Button >=</Button>
-          </div>
-          </div>
-  )
-  
-}
+    <div className="key-panel">
+      <div className="row">
+        <Button handleClick={handleClick} color="light-gray" name="AC" />
+        <Button handleClick={handleClick} color="light-gray" name="+/-" />
+        <Button handleClick={handleClick} color="light-gray" name="%" />
+        <Button handleClick={handleClick} name="÷" />
+      </div>
+      <div className="row">
+        <Button handleClick={handleClick} color="light-gray" name="7" />
+        <Button handleClick={handleClick} color="light-gray" name="8" />
+        <Button handleClick={handleClick} color="light-gray" name="9" />
+        <Button handleClick={handleClick} name="X" />
+      </div>
+      <div className="row">
+        <Button handleClick={handleClick} color="light-gray" name="4" />
+        <Button handleClick={handleClick} color="light-gray" name="5" />
+        <Button handleClick={handleClick} color="light-gray" name="6" />
+        <Button handleClick={handleClick} name="-" />
+      </div>
+      <div className="row">
+        <Button handleClick={handleClick} color="light-gray" name="1" />
+        <Button handleClick={handleClick} color="light-gray" name="2" />
+        <Button handleClick={handleClick} color="light-gray" name="3" />
+        <Button handleClick={handleClick} name="+" />
+      </div>
+      <div className="row">
+        <Button
+          handleClick={handleClick}
+          color="light-gray"
+          wide={true}
+          name="0"
+        />
+        <Button handleClick={handleClick} color="light-gray" name="." />
+        <Button handleClick={handleClick} name="=" />
+      </div>
+    </div>
+  );
+};
 
-export default ButtonPanel
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired
+};
+
+export default ButtonPanel;
