@@ -1,23 +1,21 @@
-.container {
-  margin-top: 100px;
-  width: 700px;
+.button-panel {
+  background-color: darkgoldenrod;
+  flex-direction: row;
   height: 500px;
+  width: 100%;
+}
+.container {
+  align-items: stretch;
   background-color: azure;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  height: 500px;
   margin: auto;
+  margin-top: 100px;
+  width: 700px;
 }
-
 .display {
+  background-color: gray;
   height: 100px;
   width: 100%;
-  background-color: gray;
-}
-
-.button-panel {
-  width: 100%;
-  height: 500px;
-  background-color: darkgoldenrod;
-  flex-direction: row;
 }

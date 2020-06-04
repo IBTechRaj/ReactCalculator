@@ -1,11 +1,11 @@
 .input {
-  margin-top: 0;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
-  font-weight: bold;
-  font-size: 1.4em;
   background-color: grey;
   color: #ffffff;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.4em;
+  height: 100px;
+  justify-content: flex-end;
+  margin-top: 0;
 }
