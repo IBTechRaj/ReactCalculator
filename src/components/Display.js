@@ -1,5 +1,5 @@
-import React from "react";
-import "./Display.css";
+import React from 'react';
+import './Display.css';
 
 function Display() {
   return <input type="text" className="input" />;
