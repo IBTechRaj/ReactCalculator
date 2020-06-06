@@ -1,8 +1,16 @@
-import React from 'react';
-import './Display.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./Display.css";
 
-function Display() {
-  return <input type="text" className="input" />;
+function Display({ result }) {
+  return (
+    <div className="result">
+      <p>{result}</p>
+    </div>
+  );
 }
+Display.propTypes = {
+  result: PropTypes.string.isRequired
+};
 
 export default Display;
