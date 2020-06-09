@@ -1,10 +1,13 @@
-import React from "react"
+import React from "react";
 
-function Display() {
+function Display({ result }) {
   return (
-    <input type='text'/>
-    
-  )
+    <div className="result">
+      <p>{result}</p>
+    </div>
+  );
 }
-
-export default Display
+Display.propTypes = {
+  result: PropTypes.string.isRequired
+};
+export default Display;
