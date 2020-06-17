@@ -1,4 +1,7 @@
-const Button = ({ wide, color, name, handleClick }) => {
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Button = ( { wide, color, name, handleClick } ) => {
   const classes = `${color}  ${
     wide ? "fifty-percent" : "twenty-five-percent"
   }`.trim();
