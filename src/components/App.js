@@ -1,8 +1,8 @@
-import React from "react";
-import Display from "./Display";
-import ButtonPanel from "./ButtonPanel";
-import calculate from "../logic/calculate";
-import "./App.css";
+import React from 'react';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/calculate';
+import './App.css';
 
 class App extends React.Component {
   constructor() {
@@ -11,14 +11,13 @@ class App extends React.Component {
     this.state = {
       nextVal: null,
       result: null,
-      operation: null
+      operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
     const { nextVal, result, operation } = this.state;
-    console.log("1", nextVal, "2", result, "3", operation, "4", buttonName);
     this.setState(calculate({ nextVal, result, operation }, buttonName));
   }
 
@@ -29,7 +28,7 @@ class App extends React.Component {
       <div className="container">
         <h1>Calculator</h1>
         <div className="display">
-          <Display result={nextVal || result || "0"} />
+          <Display result={nextVal || result || '0'} />
         </div>
         <div className="button-panel">
           <ButtonPanel handleClick={this.handleClick} />
