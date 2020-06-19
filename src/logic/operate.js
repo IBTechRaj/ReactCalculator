@@ -16,7 +16,11 @@ const operate = (num1, num2, operator) => {
       case 'X':
         return a.times(b).toString();
       case '÷':
+        if (b.toString() === '0') {
+          return 'Cant divide by Zero';
+        }
         return a.div(b).toString();
+
       default:
         return null;
     }

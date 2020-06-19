@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
-<<<<<<< HEAD
 import './ButtonPanel.css';
-=======
->>>>>>> development
 
 const ButtonPanel = ({ handleClick }) => (
   <div className="key-panel">
@@ -33,16 +30,7 @@ const ButtonPanel = ({ handleClick }) => (
       <Button handleClick={handleClick} name="+" />
     </div>
     <div className="row">
-<<<<<<< HEAD
-      <Button
-        handleClick={handleClick}
-        color="light-gray"
-        wide
-        name="0"
-      />
-=======
       <Button handleClick={handleClick} color="light-gray" wide name="0" />
->>>>>>> development
       <Button handleClick={handleClick} color="light-gray" name="." />
       <Button handleClick={handleClick} name="=" />
     </div>
@@ -52,8 +40,4 @@ const ButtonPanel = ({ handleClick }) => (
 ButtonPanel.propTypes = {
   handleClick: PropTypes.func.isRequired,
 };
-<<<<<<< HEAD
-
-=======
->>>>>>> development
 export default ButtonPanel;
