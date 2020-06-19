@@ -1,18 +1,35 @@
+.orange {
+  background-color: orange;
+}
+
 .button-panel .orange {
   background-color: #f5913e;
 }
+
 .button-panel .orange:hover {
   background-color: #e7893c;
 }
+
 .button-panel .orange:active {
   background-color: #f5913e;
 }
+
+.light-gray {
+  background-color: #e4e4e4;
+}
+
+.light-gray:hover {
+  background-color: lightgray;
+}
+
 .button-panel .light-gray:active {
   background-color: #e4e4e4;
 }
+
 .fifty-percent {
   width: 50%;
 }
+
 .key-panel {
   background-color: blueviolet;
   display: flex;
@@ -20,20 +37,13 @@
   height: 500px;
   width: 700px;
 }
-.light-gray {
-  background-color: #e4e4e4;
-}
-.light-gray:hover {
-  background-color: lightgray;
-}
-.orange {
-  background-color: orange;
-}
+
 .row {
   display: flex;
   height: 100px;
   width: 100%;
 }
+
 .twenty-five-percent {
   width: 25%;
 }
