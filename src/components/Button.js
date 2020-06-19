@@ -5,7 +5,7 @@ import './Button.css';
 const Button = ({
   wide, color, name, handleClick,
 }) => {
-  const classes = `${color}  ${
+  const classes = `${color} ${
     wide ? 'fifty-percent' : 'twenty-five-percent'
   }`.trim();
 
@@ -28,5 +28,4 @@ Button.propTypes = {
   color: PropTypes.string,
   handleClick: PropTypes.func.isRequired,
 };
-
 export default Button;
