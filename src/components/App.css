@@ -12,7 +12,7 @@
   flex-direction: column;
   height: 500px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 20px;
   width: 700px;
 }
 
@@ -20,4 +20,9 @@
   background-color: gray;
   height: 100px;
   width: 100%;
+  font-size: 28px;
+}
+
+h1 {
+  text-align: center;
 }

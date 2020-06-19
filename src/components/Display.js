@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-<<<<<<< HEAD
 import './Display.css';
-=======
->>>>>>> development
 
 function Display({ result }) {
   return (
@@ -15,8 +12,5 @@ function Display({ result }) {
 Display.propTypes = {
   result: PropTypes.string.isRequired,
 };
-<<<<<<< HEAD
 
-=======
->>>>>>> development
 export default Display;

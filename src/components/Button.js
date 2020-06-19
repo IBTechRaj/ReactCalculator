@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Button.css';
 
 const Button = ({
   wide, color, name, handleClick,
 }) => {
-<<<<<<< HEAD
   const classes = `${color} ${
-=======
-  const classes = `${color}  ${
->>>>>>> development
     wide ? 'fifty-percent' : 'twenty-five-percent'
   }`.trim();
 
@@ -31,8 +28,4 @@ Button.propTypes = {
   color: PropTypes.string,
   handleClick: PropTypes.func.isRequired,
 };
-<<<<<<< HEAD
-
-=======
->>>>>>> development
 export default Button;
