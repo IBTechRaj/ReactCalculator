@@ -3,7 +3,7 @@ import Big from 'big.js';
 const operate = (num1, num2, operator) => {
   if (num2 === undefined) return num1;
   if (num1 === undefined) return num2;
-
+git sta
   Big.DP = 10;
   const a = Big(num1);
   const b = Big(num2);
