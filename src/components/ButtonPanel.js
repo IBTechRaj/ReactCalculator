@@ -1,5 +1,7 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from './Button';
+import './ButtonPanel.css';
 
 const ButtonPanel = ({ handleClick }) => (
   <div className="key-panel">
@@ -36,6 +38,6 @@ const ButtonPanel = ({ handleClick }) => (
 );
 
 ButtonPanel.propTypes = {
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired,
 };
 export default ButtonPanel;

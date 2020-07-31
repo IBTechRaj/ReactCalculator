@@ -1,0 +1,28 @@
+.button-panel {
+  background-color: darkgoldenrod;
+  flex-direction: row;
+  height: 500px;
+  width: 100%;
+}
+
+.container {
+  align-items: stretch;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin: auto;
+  margin-top: 20px;
+  width: 700px;
+}
+
+.display {
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+  font-size: 28px;
+}
+
+h1 {
+  text-align: center;
+}

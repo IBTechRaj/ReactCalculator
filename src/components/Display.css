@@ -1,0 +1,12 @@
+.result {
+  align-items: flex-end;
+  background-color: grey;
+  color: #fff;
+  display: flex;
+  font-size: 1.4em;
+  font-weight: bold;
+  height: 100px;
+  justify-content: flex-end;
+  margin-top: 0;
+  width: 100%;
+}
