@@ -1,6 +1,6 @@
 # Calculator
 
-This App retrieves weather data using weather API and displays the weather information of any major city, depending on the user's choice.
+This App works as a calcultor. It takes input by mouse clicks and makes calculations and displays the result on the screen.
 
 # Technologies
 
